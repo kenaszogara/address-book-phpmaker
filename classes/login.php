@@ -358,6 +358,8 @@ class login extends user
 	public function terminate($url = "")
 	{
 		global $ExportFileName, $TempImages, $DashboardReport;
+		global $OldSkipHeaderFooter, $SkipHeaderFooter;
+		$SkipHeaderFooter = $OldSkipHeaderFooter;
 
 		// Page Unload event
 		$this->Page_Unload();
@@ -441,6 +443,9 @@ class login extends user
 			$Security = new AdvancedSecurity();
 		}
 		$this->CurrentAction = Param("action"); // Set up current action
+		global $OldSkipHeaderFooter, $SkipHeaderFooter;
+		$OldSkipHeaderFooter = $SkipHeaderFooter;
+		$SkipHeaderFooter = TRUE;
 
 		// Global Page Loading event (in userfn*.php)
 		Page_Loading();
