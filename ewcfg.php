@@ -216,7 +216,7 @@ $CONFIG = [
 
 	// Database connection info
 	"CONNECTION_INFO" => [
-		"DB" => ["id" => "DB", "type" => "MYSQL", "qs" => "`", "qe" => "`", "host" => "localhost", "port" => 3306, "user" => "root", "pass" => "", "db" => "otg"]
+		"DB" => ["id" => "DB", "type" => "PGSQL", "qs" => "`", "qe" => "`", "host" => "ec2-52-72-65-76.compute-1.amazonaws.com", "port" => 5432, "user" => "kxwonfzgoqjjxr", "pass" => "e0b5853561179a3ab0950e311e247a06000a7cccf481ba1d72e6e24a51cd1634", "db" => "d1jjjmbjsftkrn"]
 	],
 
 	// Database error function
